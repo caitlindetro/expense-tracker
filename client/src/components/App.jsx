@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import { createGlobalStyle } from 'styled-components';
+import Budget from './Budget.jsx';
+import Overview from './Overview.jsx';
 
 const GlobalStyle = createGlobalStyle`
 @import url('https://fonts.googleapis.com/css?family=Lobster');
@@ -37,6 +39,8 @@ class App extends React.Component {
       <div>
         <GlobalStyle />
         <Title>PocketChange</Title>
+        <Budget />
+        <Overview />
       </div>
     )
   }
